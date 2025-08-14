@@ -15,10 +15,7 @@ class OrderFeedPageLocators:
 
     ACCOUNT_BUTTON = (By.XPATH, "//p[contains(text(),'Личный Кабинет')]")
 
-    LAST_ORDER = (
-        By.XPATH,
-        "//body/div[@id='root']/div[@class='App_App__aOmNj']/main[@class='App_componentContainer__2JC2W']/div[@class='OrderFeed_orderFeed__2RO_j']/div[@class='OrderFeed_contentBox__3-tWb']/ul[@class='OrderFeed_list__OLh59']/li[1]/a[1]/div[1]"
-    )
+    LAST_ORDER = (By.XPATH, "(//div[contains(@class, 'OrderHistory_textBox__3lgbs')])[last()]")
 
     ORDER_DETAILS_CONTENT = (
         By.XPATH,
